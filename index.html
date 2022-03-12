@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="quizapp">
+        <div id="quiz_cover" class="clearfixsol">
+            <div class="row">
+                <div class="col col1">
+                    <h1 class="quiz_headline"></h1>
+                    <img class="quiz_leadimg" src="" alt="">
+                </div>
+                <div class="col col2 makerelative">
+                    <div class="verticalalignment">
+                        <p class="quiz_description"></p>
+                    </div> 
+                    <div class="pulltobottom">
+                        <button class="startBtn">
+                            <img src="img/startbtn.png" alt="">
+                        </button>   
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <!--quiz_cover-->
+        <div id="questionslide" class="clearfixsol hidden">
+            <header class="quiz_headline"> </header>
+            <div id="quiz_content"></div>
+            <div class="progressinfo">
+                <div class='row clearfixsol footer'>
+                    <p id="quizstatus" class='pull-left'></p>
+                    <div class='timer-div'>Time left: <span id='timer'></span></div>
+                    <button onclick='gotoNextQuestion()' class='pull-right width50 next fade-in' disabled='disabled' id='choiceSubmit'>Next &raquo;</button>
+                </div>
+                <div class="progressbar">
+                    <div class="progressbarfull"></div>
+                </div>
+            </div>
+        </div> <!--questionslide-->
+        <div id="quiz_endcover" class="clearfixsol hidden">
+            <h2 class="quiz_headline"> </h2>
+            <div class='quizcounter2'><p id="score"></p> <p id="scoredesc">your<br>score</p><p id="noofquestions"></p></div>
+            <p class="quiz_description"></p>
+            <div class="row clearfixsol">
+                <div>
+                    <button class="retakeBtn"><img src="img/restart.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div> <!--quiz_endcover-->
+    <div id="timeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+               <h2>Oops! Time out</h2> 
+               <button class="retakeBtn"><i class="fa fa-repeat"></i>RETAKE THIS QUIZ</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/trigger.js"></script>
+</body>
+</html>

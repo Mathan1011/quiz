@@ -121,17 +121,17 @@ function endQuiz() {
     noofquestions.innerHTML = "/"+listOfQuestions.length;
 
    if(score < 5) {
-    // jQuery("#newModalContent").append("<h4>Next Time! </h4><br><p>You may consider spending more time on The Federal</p>")
-    jQuery("#initial-count").html("<h4>Better Luck Next Time!</h4><p> You may consider spending more time on The Federal. Fill and submit the below form to know your score </p>")
+    // jQuery("#newModalContent").append("<h4>Next Time! </h4>")
+    jQuery("#initial-count").html("<h4>Better Luck Next Time!</h4>")
    } else if( score >= 5 && score < 7) {
-    // jQuery("#newModalContent").html("<h4>So Close!</h4> <p>Keep reading more news on The Federal.</p>")
-    jQuery("#initial-count").html("<h4>So Close! </h4><p>Keep reading more news on The Federal. Fill and submit the below form to know your score </p>")
+    // jQuery("#newModalContent").html("<h4>So Close!</h4>")
+    jQuery("#initial-count").html("<h4>So Close! </h4>")
    } else if( score >= 7 && score < 10) {
-    // jQuery("#newModalContent").html("<h4>Amazing! </h4> <p>You're almost there. Keep reading the news on The Federal. </p>")
-    jQuery("#initial-count").html("<h4>Amazing!</h4><p> You're almost there. Keep reading the news on The Federal. Fill and submit the below form to know your score </p>")
+    // jQuery("#newModalContent").html("<h4>Amazing! </h4> ")
+    jQuery("#initial-count").html("<h4>Amazing!</h4><p> You're almost there</p>")
    } else if( score === 10) {
-    // jQuery("#newModalContent").html("<h4>Astounding!</h4><p> You're the Wizard of Quiz World! Keep reading The Federal to keep your IQ up-high </p>")
-    jQuery("#initial-count").html("<h4>Astounding!</h4><p> You're the Wizard of Quiz World! Keep reading The Federal. Fill and submit the below form to know your score </p>")
+    // jQuery("#newModalContent").html("<h4>Astounding!</h4><p> You're the Wizard of Quiz World!</p>")
+    jQuery("#initial-count").html("<h4>Astounding!</h4><p> You're the Wizard of Quiz World!</p>")
    }
 
 } 
